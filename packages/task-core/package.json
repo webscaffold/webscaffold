@@ -1,5 +1,5 @@
 {
-  "name": "task-core",
+  "name": "@webscaffold/task-core",
   "version": "0.1.0",
   "description": "@webscaffold core module",
   "main": "lib/index.js",
