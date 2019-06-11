@@ -19,7 +19,7 @@ const fileExists = (file) => {
  * @param {Object} opts - Options object
  * @returns {Promise} Promise object
  */
-const readFile = (file, opts) => new Promise((resolve, reject) => {
+const readFile = (file, opts = { encoding: 'utf8' }) => new Promise((resolve, reject) => {
 	fs.readFile(
 		file,
 		{
