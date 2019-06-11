@@ -7,8 +7,16 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "author": "Radu Micu",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "globby": "9.2.0",
+    "make-dir": "3.0.0",
+    "rimraf": "2.6.3"
+  },
+  "devDependencies": {
+    "ava": "^2.1.0"
+  }
 }
