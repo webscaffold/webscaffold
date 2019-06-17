@@ -12,6 +12,7 @@
 			]
 		},
 		"publish": {
+			"message": "chore(release): publish %s",
 			"ignoreChanges": [
 				"*.md",
 				"*.txt",
