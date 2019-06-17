@@ -8,7 +8,8 @@
     "lib": "lib"
   },
   "files": [
-    "lib/*"
+    "lib/*",
+    "LICENSE.txt"
   ],
   "engines": {
     "node": ">=10"

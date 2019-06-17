@@ -4,3 +4,6 @@
 
 # @web-scaffold/task-core
 
+## Licensing
+
+MIT © Radu Micu

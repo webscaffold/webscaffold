@@ -5,7 +5,8 @@
   "description": "@webscaffold clean task",
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "LICENSE.txt"
   ],
   "engines": {
     "node": ">=10"
