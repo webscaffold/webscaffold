@@ -15,7 +15,7 @@
     "web starter"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish": "./node_modules/.bin/lerna publish"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
