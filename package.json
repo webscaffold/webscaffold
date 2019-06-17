@@ -1,5 +1,5 @@
 {
-	"private": true,
+  "private": true,
   "name": "webscaffold",
   "version": "0.1.0",
   "description": "Scaffold out a front-end web app using Webpack, Express.js, and others",
@@ -15,7 +15,7 @@
     "web starter"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish": "./node_modules/.bin/lerna publish"
   },
   "devDependencies": {
     "eslint": "^5.16.0",

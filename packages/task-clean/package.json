@@ -1,0 +1,27 @@
+{
+  "name": "@webscaffold/task-clean",
+  "version": "0.1.0",
+  "author": "Radu Micu",
+  "description": "@webscaffold clean task",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "LICENSE.txt"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "test:coverage": "nyc ava"
+  },
+  "dependencies": {
+    "@webscaffold/task-core": "^0.1.0"
+  },
+  "devDependencies": {
+    "ava": "^2.1.0",
+    "nyc": "^14.1.1",
+    "make-dir": "^3.0.0"
+  }
+}

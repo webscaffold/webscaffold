@@ -1,0 +1,36 @@
+{
+  "name": "@webscaffold/task-core",
+  "version": "0.1.0",
+  "author": "Radu Micu",
+  "description": "@webscaffold core module",
+  "license": "MIT",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib/*",
+    "LICENSE.txt"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "ava",
+    "test:coverage": "nyc ava"
+  },
+  "dependencies": {
+    "chalk": "2.4.2",
+    "emittery": "0.4.1",
+    "figures": "3.0.0",
+    "globby": "9.2.0",
+    "make-dir": "3.0.0",
+    "rimraf": "2.6.3",
+    "stack-trace": "0.0.10",
+    "time-stamp": "2.2.0"
+  },
+  "devDependencies": {
+    "ava": "^2.1.0",
+    "nyc": "^14.1.1"
+  }
+}
