@@ -1,6 +1,4 @@
-const fs = require('../lib/fs');
-const TaskError = require('../lib/task-error').TaskError
-const reporter = require('../lib/reporter');
+const { fs, reporter, TaskError } = require('@webscaffold/task-core');
 
 /**
  * Cleans up the output (build) directory, or any other path that you pass.

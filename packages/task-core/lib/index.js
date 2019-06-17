@@ -1,5 +1,9 @@
 const fs = require('./fs');
+const reporter = require('./reporter');
+const TaskError = require('./task-error').TaskError;
 
 module.exports = {
-	fs
+	fs,
+	reporter,
+	TaskError
 };
