@@ -4,6 +4,7 @@
   "author": "Radu Micu",
   "description": "@webscaffold clean task",
   "license": "MIT",
+  "repository": "webscaffold/task-clean",
   "files": [
     "index.js",
     "LICENSE.txt"

@@ -4,6 +4,7 @@
   "author": "Radu Micu",
   "description": "@webscaffold core module",
   "license": "MIT",
+  "repository": "webscaffold/task-core",
   "directories": {
     "lib": "lib"
   },
