@@ -19,7 +19,8 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "lerna": "^3.15.0"
+    "lerna": "^3.15.0",
+    "lerna-changelog": "^0.8.2"
   },
   "repository": {
     "type": "git",

@@ -6,8 +6,14 @@
 node_modules
 npm-debug.log
 
+# OS Level
+.DS_Store
+
 # Build, cache, temp
 .tmp
+/.changelog
+*.log
+*.cache
 
 # Code coverage
 coverage
@@ -15,3 +21,4 @@ coverage
 
 # Editors
 .vscode
+.idea/
