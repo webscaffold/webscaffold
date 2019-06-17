@@ -25,6 +25,7 @@
     "globby": "9.2.0",
     "make-dir": "3.0.0",
     "rimraf": "2.6.3",
+    "stack-trace": "0.0.10",
     "time-stamp": "2.2.0"
   },
   "devDependencies": {

@@ -8,7 +8,7 @@ const { fs, reporter, TaskError } = require('@webscaffold/task-core');
  * @param {String} options.taskColor Task color used for reporting purposes
  * @returns {Promise} Task promise
  */
-function clean(paths, options) {
+function clean(paths, options = {}) {
 	const taskName = options.taskName || 'clean';
 	const taskColor = options.taskColor || '#F3FFBD;'
 	const logger = reporter(taskName, { color: taskColor });
