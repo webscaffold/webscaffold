@@ -1,7 +1,6 @@
 const fs = require('fs');
 const test = require('ava');
 const makeDir = require('make-dir');
-
 const clean = require('../index');
 
 test.beforeEach(async (t) => {
@@ -12,7 +11,7 @@ test.beforeEach(async (t) => {
 	t.context.targetDir = path;
 });
 
-test('fs:fileExists existing fixture file', async (t) => {
+test('clean a folder of its files', async (t) => {
 	try {
 		await clean([t.context.targetDir+'/*']);
 
