@@ -1,6 +1,6 @@
 {
   "name": "@webscaffold/task-clean",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0-alpha.1",
   "author": "Radu Micu",
   "description": "@webscaffold clean task",
   "license": "MIT",
@@ -16,8 +16,6 @@
   "scripts": {
     "test": "ava",
     "test:coverage": "nyc ava"
-  },
-  "dependencies": {
   },
   "peerDependencies": {
     "@webscaffold/task-core": "^0.1.0"
