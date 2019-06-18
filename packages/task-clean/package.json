@@ -18,9 +18,12 @@
     "test:coverage": "nyc ava"
   },
   "dependencies": {
+  },
+  "peerDependencies": {
     "@webscaffold/task-core": "^0.1.0"
   },
   "devDependencies": {
+    "@webscaffold/task-core": "^0.1.0",
     "ava": "^2.1.0",
     "make-dir": "^3.0.0",
     "nyc": "^14.1.1"
