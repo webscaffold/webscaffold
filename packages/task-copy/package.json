@@ -1,6 +1,6 @@
 {
   "name": "@webscaffold/task-copy",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0-alpha.1",
   "author": "Radu Micu",
   "description": "@webscaffold copy task",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "@webscaffold/task-core": "^0.1.0-alpha.2"
   },
   "devDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.2",
+    "@webscaffold/task-core": "^0.1.0-alpha.3",
     "ava": "^2.1.0",
     "nyc": "^14.1.1",
     "rimraf": "^2.6.3",
