@@ -21,10 +21,10 @@
     "cpy": "^7.3.0"
   },
   "peerDependencies": {
-    "@webscaffold/task-core": "^0.1.0"
+    "@webscaffold/task-core": "^0.1.0-alpha.2"
   },
   "devDependencies": {
-    "@webscaffold/task-core": "^0.1.0",
+    "@webscaffold/task-core": "^0.1.0-alpha.2",
     "ava": "^2.1.0",
     "nyc": "^14.1.1",
     "rimraf": "^2.6.3",

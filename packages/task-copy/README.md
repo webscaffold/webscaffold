@@ -17,30 +17,44 @@ $ npm install --save-dev @webscaffold/task-copy
 ```js
 const copy = require('@webscaffold/task-copy');
 
-await copy(['path_to_folder/*'], options);
+await copy(['source/*.png', '!source/goat.png'], 'destination');
 ```
 
 This will copy all files from the folder.
 
-The modules uses [rimraf](https://www.npmjs.com/package/rimraf) internally so for more info on how you can define the paths check the modules options.
+The module uses [cpy](https://github.com/sindresorhus/cpy) under the hood to copy the files.
 
 ## API
 
-### copy(paths, [options])
+### copy(source, destination, options?)
 
-Returns a Promise for the paths to be removed. It will also log to the console the steps it took to do it.
+Returns a Promise<string[]> with the destination file paths.
 
-#### paths
+#### source
 
-Type: `array`
+Type: string | string[]
 
-Array of paths to be removed using `rimraf` options.
+Files to copy.
+
+#### destination
+
+Type: string
+
+Destination directory.
 
 #### options
 
 Type: `object`
 
 Options object that can be passed.
+
+##### cpy
+
+Type: object
+
+Options are passed to globby.
+
+In addition, you can specify the [cpy options](https://github.com/sindresorhus/cpy#options).
 
 ##### taskName
 
@@ -52,7 +66,7 @@ Task name that will be used by the logger to namespace the logs.
 ##### taskColor
 
 Type: `string`<br>
-Default: `#F3FFBD`
+Default: `#B2DBBF`
 
 The color used by the logger to log to the console the task output.
 

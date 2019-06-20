@@ -69,7 +69,7 @@ module.exports = function (taskName, options = {}) {
 	});
 
 	emitter.on('debug', (message) => {
-		logger.debug(message.message, message.data);
+		logger.debug(message);
 	});
 
 	emitter.on('log', (message = '') => {

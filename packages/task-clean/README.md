@@ -22,7 +22,7 @@ await clean(['path_to_folder/*'], options);
 
 This will clean all files from the folder.
 
-The modules uses [rimraf](https://www.npmjs.com/package/rimraf) internally so for more info on how you can define the paths check the modules options.
+The module uses [rimraf](https://www.npmjs.com/package/rimraf) internally so for more info on how you can define the paths check the modules options.
 
 ## API
 
