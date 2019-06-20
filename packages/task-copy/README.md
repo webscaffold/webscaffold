@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="media/copy.svg" alt="Web Scaffold task-core" height="200" />
+  <img src="media/copy.svg" alt="Web Scaffold task-copy" height="200" />
 </div>
 
 # @web-scaffold/task-copy

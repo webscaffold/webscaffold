@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="media/bulldozer.svg" alt="Web Scaffold task-core" height="200" />
+  <img src="media/bulldozer.svg" alt="Web Scaffold task-clean" height="200" />
 </div>
 
 # @web-scaffold/task-clean
