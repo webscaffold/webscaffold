@@ -1,0 +1,43 @@
+{
+  "name": "@webscaffold/task-css-compiler",
+  "version": "0.1.0-alpha.0",
+  "author": "Radu Micu",
+  "description": "@webscaffold css compiler task (Sass, Postcss)",
+  "license": "MIT",
+  "repository": "https://github.com/webscaffold/webscaffold/tree/master/packages/task-css-compiler",
+  "files": [
+    "lib/*",
+    "index.js",
+    "LICENSE.txt"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "test:coverage": "nyc ava"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "fibers": "^4.0.1",
+    "indent-string": "^4.0.0",
+    "ms": "^2.1.2",
+    "postcss": "^7.0.17",
+    "postcss-preset-env": "^6.6.0",
+    "postcss-reporter": "^6.0.1",
+    "rev-hash": "^3.0.0",
+    "sass": "^1.21.0"
+  },
+  "peerDependencies": {
+    "@webscaffold/task-core": "^0.1.0-alpha.2"
+  },
+  "devDependencies": {
+    "@webscaffold/task-core": "^0.1.0-alpha.3",
+    "ava": "^2.1.0",
+    "nyc": "^14.1.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
