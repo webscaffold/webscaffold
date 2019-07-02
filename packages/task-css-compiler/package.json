@@ -8,6 +8,8 @@
   "files": [
     "lib/*",
     "index.js",
+    "compiler.js",
+    "optimizer.js",
     "LICENSE.txt"
   ],
   "engines": {
@@ -20,22 +22,26 @@
   },
   "dependencies": {
     "chalk": "^2.4.2",
+    "clean-css": "^4.2.1",
     "fibers": "^4.0.1",
     "indent-string": "^4.0.0",
     "ms": "^2.1.2",
     "postcss": "^7.0.17",
     "postcss-preset-env": "^6.6.0",
     "postcss-reporter": "^6.0.1",
+    "pretty-bytes": "^5.2.0",
     "rev-hash": "^3.0.0",
     "sass": "^1.21.0"
   },
   "peerDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.2"
+    "@webscaffold/task-core": "^0.1.0-alpha.3"
   },
   "devDependencies": {
     "@webscaffold/task-core": "^0.1.0-alpha.3",
     "ava": "^2.1.0",
-    "nyc": "^14.1.1"
+    "nyc": "^14.1.1",
+    "rimraf": "^2.6.3",
+    "tempy": "^0.3.0"
   },
   "publishConfig": {
     "access": "public"

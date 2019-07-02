@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="media/css.svg" alt="Web Scaffold task-css-compiler" height="200" />
+  <img src="media/css-construction.svg" alt="Web Scaffold task-css-compiler" height="200" />
 </div>
 
 # @web-scaffold/task-css-compiler
