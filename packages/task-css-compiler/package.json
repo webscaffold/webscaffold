@@ -1,6 +1,6 @@
 {
   "name": "@webscaffold/task-css-compiler",
-  "version": "0.1.0-alpha.0",
+  "version": "0.0.0",
   "author": "Radu Micu",
   "description": "@webscaffold css compiler task (Sass, Postcss)",
   "license": "MIT",
