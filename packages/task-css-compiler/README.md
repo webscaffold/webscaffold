@@ -4,7 +4,7 @@
 
 # @web-scaffold/task-css-compiler
 
-> [`WEB Scaffold`](https://github.com/webscaffold/webscaffold) task for copying up folders and files.
+> [`WEB Scaffold`](https://github.com/webscaffold/webscaffold) task for compiling Sass to css, running PostCSS and optimizing the output.
 
 ## Install
 
@@ -15,26 +15,31 @@ $ npm install --save-dev @webscaffold/task-css-compiler
 ## Usage
 
 ```js
-const copy = require('@webscaffold/task-copy');
+const cssCompiler = require('@webscaffold/task-css-compiler');
 
-await copy(['source/*.png', '!source/goat.png'], 'destination');
+await cssCompiler('path/to/input.scss', 'path/to/output/folder', {
+	taskName: 'css compiler',
+	isDebug: true,
+	buildPath: 'path/to/build/folder/for/asset-manifest-style.json',
+	sass: {
+		sourceMapEmbed: false 
+	}
+});
 ```
 
-This will copy all files from the folder.
-
-The module uses [cpy](https://github.com/sindresorhus/cpy) under the hood to copy the files.
+This will compile the entry Scss file to CSS will run [PostCSS](https://postcss.org/) on top and based on settings will optimize the file with [clean-css](https://github.com/jakubpawlowicz/clean-css).
 
 ## API
 
-### copy(source, destination, options?)
+### cssCompiler(input, destination, options?)
 
 Returns a Promise<string[]> with the destination file paths.
 
-#### source
+#### input
 
-Type: string | string[]
+Type: string
 
-Files to copy.
+Entry sass file path.
 
 #### destination
 
@@ -48,25 +53,23 @@ Type: `object`
 
 Options object that can be passed.
 
-##### cpy
+##### sass
 
 Type: object
 
-Options are passed to globby.
-
-In addition, you can specify the [cpy options](https://github.com/sindresorhus/cpy#options).
+Options are passed to Sass compiler.
 
 ##### taskName
 
 Type: `string`<br>
-Default: `copy`
+Default: `css-compiler`
 
 Task name that will be used by the logger to namespace the logs.
 
 ##### taskColor
 
 Type: `string`<br>
-Default: `#B2DBBF`
+Default: `#FFD166`
 
 The color used by the logger to log to the console the task output.
 
