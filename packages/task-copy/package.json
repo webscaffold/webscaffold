@@ -21,7 +21,7 @@
     "cpy": "^7.3.0"
   },
   "peerDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.2"
+    "@webscaffold/task-core": "^0.1.0-alpha.3"
   },
   "devDependencies": {
     "@webscaffold/task-core": "^0.1.0-alpha.3",
