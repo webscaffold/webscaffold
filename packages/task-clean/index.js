@@ -1,11 +1,14 @@
+'use strict';
+
 const { fs, reporter, TaskError } = require('@webscaffold/task-core');
 
 /**
  * Cleans up the output (build) directory, or any other path that you pass.
+ *
  * @param {Array} paths - Array of paths to be removed
- * @param {Object} options Options object
- * @param {String} options.taskName Task name used for reporting purposes
- * @param {String} options.taskColor Task color used for reporting purposes
+ * @param {object} options Options object
+ * @param {string} options.taskName Task name used for reporting purposes
+ * @param {string} options.taskColor Task color used for reporting purposes
  * @returns {Promise} Task promise
  */
 function clean(paths, options = {}) {
@@ -23,7 +26,7 @@ function clean(paths, options = {}) {
 	}
 
 	// Generate job array for all paths
-	const cleanJobs = paths.map(path => {
+	const cleanJobs = paths.map((path) => {
 		logger.emit('info', `cleaning path: ${path}`);
 
 		return fs.cleanDir(path, {
