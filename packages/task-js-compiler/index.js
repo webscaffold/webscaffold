@@ -43,7 +43,10 @@ function compiler(webpackConfig, options = {}) {
 				reject(new Error('webpack error'));
 			}
 
-			resolve(instance);
+			resolve({
+				instance,
+				stats
+			});
 		});
 	});
 }

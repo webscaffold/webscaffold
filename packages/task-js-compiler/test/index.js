@@ -1,24 +1,29 @@
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
 const test = require('ava');
-const tempy = require('tempy');
 const rimraf = require('rimraf');
-const { compiler } = require('../index');
-
-const read = (...args) => fs.readFileSync(path.join(...args), 'utf8').trim();
+const compiler = require('../index');
+const webpackConfig = require('./fixtures/webpack.config.js');
 
 test.beforeEach((t) => {
-	t.context.webpackConfig = path.resolve('test/fixtures/webpack.config.js');
+	t.context.webpackConfig = webpackConfig;
 });
 
-test.afterEach((t) => {
-	rimraf.sync(t.context.tmp);
+test.afterEach(() => {
+	// TODO: Perhaps use memory-fs
+	// const MemoryFS = require('memory-fs');
+	// const webpack = require('webpack');
+	// const fs = new MemoryFS();
+	// const compiler = webpack({ / options / });
+	// compiler.outputFileSystem = fs;
+	// compiler.run((err, stats) => {
+	//   const content = fs.readFileSync('...');
+	// });
+	rimraf.sync('./test/fixtures/dist');
 });
 
-test('compile sass file with external sourcemap', async (t) => {
-	await compiler(t.context.webpackConfig);
+test('compile js with webpack', async (t) => {
+	const { stats } = await compiler(t.context.webpackConfig);
 
-	t.is(1, 1);
+	t.is(stats.hasErrors(), false);
 });

@@ -1,10 +1,10 @@
 <div align="center">
-  <img src="media/js-construction.svg" alt="Web Scaffold task-js-compiler" height="200" />
+  <img src="media/building.svg" alt="Web Scaffold task-js-compiler" height="200" />
 </div>
 
 # @web-scaffold/task-js-compiler
 
-> [`WEB Scaffold`](https://github.com/webscaffold/webscaffold) task for compiling Sass to js, running PostCSS and optimizing the output.
+> [`WEB Scaffold`](https://github.com/webscaffold/webscaffold) task for bundling js, running Webpack with Babel.
 
 ## Install
 
@@ -17,47 +17,28 @@ $ npm install --save-dev @webscaffold/task-js-compiler
 ```js
 const jsCompiler = require('@webscaffold/task-js-compiler');
 
-await jsCompiler('path/to/input.sjs', 'path/to/output/folder', {
-	taskName: 'js compiler',
-	isDebug: true,
-	buildPath: 'path/to/build/folder/for/asset-manifest-style.json',
-	sass: {
-		sourceMapEmbed: false 
-	}
-});
+await jsCompiler(webpackConfigObj);
 ```
 
-This will compile the entry Sjs file to CSS will run [PostCSS](https://postjs.org/) on top and based on settings will optimize the file with [clean-js](https://github.com/jakubpawlowicz/clean-js).
+This will run Webpack based on the config passed.
 
 ## API
 
-### jsCompiler(input, destination, options?)
+### jsCompiler(webpackConfig, options?)
 
-Returns a Promise<string[]> with the destination file paths.
+Returns a Promise<object> with the webpack instance and stats object.
 
-#### input
+#### webpackConfig
 
-Type: string
+Type: object
 
-Entry sass file path.
-
-#### destination
-
-Type: string
-
-Destination directory.
+Webpack config object.
 
 #### options
 
 Type: `object`
 
 Options object that can be passed.
-
-##### sass
-
-Type: object
-
-Options are passed to Sass compiler.
 
 ##### taskName
 
@@ -69,7 +50,7 @@ Task name that will be used by the logger to namespace the logs.
 ##### taskColor
 
 Type: `string`<br>
-Default: `#FFD166`
+Default: `#00a8e8`
 
 The color used by the logger to log to the console the task output.
 
