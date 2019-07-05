@@ -18,10 +18,10 @@
     "publish": "./node_modules/.bin/lerna publish"
   },
   "devDependencies": {
-    "@radum/eslint-config": "^0.3.0",
-    "eslint": "^5.16.0",
-    "lerna": "^3.15.0",
-    "lerna-changelog": "^0.8.2"
+    "@radum/eslint-config": "0.3.0",
+    "eslint": "5.16.0",
+    "lerna": "3.15.0",
+    "lerna-changelog": "0.8.2"
   },
   "repository": {
     "type": "git",
