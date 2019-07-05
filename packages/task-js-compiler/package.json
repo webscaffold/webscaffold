@@ -1,0 +1,38 @@
+{
+  "name": "@webscaffold/task-js-compiler",
+  "version": "0.0.0",
+  "author": "Radu Micu",
+  "description": "@webscaffold js compiler task (Webpack, Babel)",
+  "license": "MIT",
+  "repository": "https://github.com/webscaffold/webscaffold/tree/master/packages/task-js-compiler",
+  "files": [
+    "lib/*",
+    "index.js",
+    "LICENSE.txt"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "test:coverage": "nyc ava"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "webpack": "^4.35.2"
+  },
+  "peerDependencies": {
+    "@webscaffold/task-core": "^0.1.0-alpha.3"
+  },
+  "devDependencies": {
+    "@webscaffold/task-core": "^0.1.0-alpha.4",
+    "ava": "^2.1.0",
+    "nyc": "^14.1.1",
+    "rimraf": "^2.6.3",
+    "tempy": "^0.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
