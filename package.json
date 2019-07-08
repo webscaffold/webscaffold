@@ -15,7 +15,8 @@
     "web starter"
   ],
   "scripts": {
-    "publish": "./node_modules/.bin/lerna publish"
+    "publish": "./node_modules/.bin/lerna publish",
+    "test:all": "./node_modules/.bin/lerna test"
   },
   "devDependencies": {
     "@radum/eslint-config": "^0.3.0",
