@@ -73,6 +73,13 @@ Default: `#FFD166`
 
 The color used by the logger to log to the console the task output.
 
+##### eventBus
+
+Type: `object`<br>
+Default: undefined
+
+The EventEmitter event bus that will be used to emit `bs:reload` for Browsersync.
+
 ## Licensing
 
 MIT © Radu Micu

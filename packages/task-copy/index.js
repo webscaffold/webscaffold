@@ -1,14 +1,17 @@
+'use strict';
+
 const cpy = require('cpy');
 const { reporter, TaskError } = require('@webscaffold/task-core');
 
 /**
  * Copy static assets from on location to another
- * @param {String | Array} src Task src string Array of files needed to be copied
- * @param {String} dest Task destination directory
- * @param {Object} options Options object
- * @param {String} options.taskName Task name used for reporting purposes
- * @param {String} options.taskColor Task color used for reporting purposes
- * @param {Object} options.cpy Cpy options. Options are passed to cp-file and globby also
+ *
+ * @param {string | array} src Task src string Array of files needed to be copied
+ * @param {string} dest Task destination directory
+ * @param {object} options Options object
+ * @param {string} options.taskName Task name used for reporting purposes
+ * @param {string} options.taskColor Task color used for reporting purposes
+ * @param {object} options.cpy Cpy options. Options are passed to cp-file and globby also
  * @returns {Promise} Task `cpy` promise
  */
 function copyStatic(src, dest, options = {}) {
@@ -16,7 +19,7 @@ function copyStatic(src, dest, options = {}) {
 	const taskColor = options.taskColor || '#B2DBBF;'
 	const logger = reporter(taskName, { color: taskColor });
 
-	let completedFiles = 0;
+	let completedFiles = 1;
 
 	logger.emit('start', `copy ${taskName} assets`);
 
@@ -29,7 +32,7 @@ function copyStatic(src, dest, options = {}) {
 		throw new TaskError(paramErr);
 	}
 
-	return cpy(src, dest, options.cpy || {}).on('progress', report => {
+	return cpy(src, dest, options.cpy || {}).on('progress', (report) => {
 		logger.emit('debug', `${report.completedFiles} / ${report.totalFiles} copied`);
 
 		completedFiles = report.completedFiles;

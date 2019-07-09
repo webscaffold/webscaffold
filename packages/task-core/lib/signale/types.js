@@ -87,7 +87,7 @@ module.exports = {
     logLevel: 'info'
   },
   debug: {
-    badge: figures('⬤'),
+    badge: figures('◌'),
     color: 'red',
     label: 'debug',
     logLevel: 'debug'
