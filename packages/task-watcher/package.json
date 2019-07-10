@@ -1,10 +1,10 @@
 {
-  "name": "@webscaffold/task-js-watcher",
+  "name": "@webscaffold/task-watcher",
   "version": "0.1.0-alpha.0",
   "author": "Radu Micu",
   "description": "@webscaffold file watcher task",
   "license": "MIT",
-  "repository": "https://github.com/webscaffold/webscaffold/tree/master/packages/task-js-watcher",
+  "repository": "https://github.com/webscaffold/webscaffold/tree/master/packages/task-watcher",
   "files": [
     "index.js",
     "LICENSE.txt"

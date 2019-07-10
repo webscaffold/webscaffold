@@ -1,21 +1,21 @@
 <div align="center">
-  <img src="media/worker.svg" alt="Web Scaffold task-js-watcher" height="200" />
+  <img src="media/worker.svg" alt="Web Scaffold task-watcher" height="200" />
 </div>
 
-# @web-scaffold/task-js-watcher
+# @web-scaffold/task-watcher
 
 > [`WEB Scaffold`](https://github.com/webscaffold/webscaffold) task for file changes watching.
 
 ## Install
 
 ```sh
-$ npm install --save-dev @webscaffold/task-js-watcher
+$ npm install --save-dev @webscaffold/task-watcher
 ```
 
 ## Usage
 
 ```js
-const watcher = require('@webscaffold/task-js-watcher');
+const watcher = require('@webscaffold/task-watcher');
 
 await watcher(filesGlob, options, taskFn);
 ```
@@ -43,7 +43,7 @@ Options object that can be passed.
 ##### taskName
 
 Type: `string`<br>
-Default: `js-watcher`
+Default: `watcher`
 
 Task name that will be used by the logger to namespace the logs.
 
