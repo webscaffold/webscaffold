@@ -23,14 +23,13 @@
     "webpack": "^4.35.2"
   },
   "peerDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.3"
+    "@webscaffold/task-core": "^0.1.0-alpha.6"
   },
   "devDependencies": {
     "@webscaffold/task-core": "^0.1.0-alpha.6",
     "ava": "^2.1.0",
     "nyc": "^14.1.1",
-    "rimraf": "^2.6.3",
-    "tempy": "^0.3.0"
+    "rimraf": "^2.6.3"
   },
   "publishConfig": {
     "access": "public"

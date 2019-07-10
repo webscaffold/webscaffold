@@ -1,6 +1,6 @@
 {
   "name": "@webscaffold/task-js-watcher",
-  "version": "0.1.0-alpha.0",
+  "version": "0.0.0",
   "author": "Radu Micu",
   "description": "@webscaffold file watcher task",
   "license": "MIT",
@@ -21,14 +21,15 @@
     "chokidar": "^3.0.2"
   },
   "peerDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.3"
+    "@webscaffold/task-core": "^0.1.0-alpha.6"
   },
   "devDependencies": {
     "@webscaffold/task-core": "^0.1.0-alpha.6",
     "ava": "^2.1.0",
+    "lolex": "^4.1.0",
     "nyc": "^14.1.1",
-    "rimraf": "^2.6.3",
-    "tempy": "^0.3.0"
+    "proxyquire": "^2.1.0",
+    "sinon": "^7.3.2"
   },
   "publishConfig": {
     "access": "public"

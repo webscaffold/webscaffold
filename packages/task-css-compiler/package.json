@@ -34,7 +34,7 @@
     "sass": "^1.21.0"
   },
   "peerDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.3"
+    "@webscaffold/task-core": "^0.1.0-alpha.6"
   },
   "devDependencies": {
     "@webscaffold/task-core": "^0.1.0-alpha.6",

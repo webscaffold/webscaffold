@@ -1,38 +1,38 @@
 <div align="center">
-  <img src="media/worker.svg" alt="Web Scaffold task-js-watcher" height="200" />
+  <img src="media/building.svg" alt="Web Scaffold task-js-compiler" height="200" />
 </div>
 
-# @web-scaffold/task-js-watcher
+# @web-scaffold/task-js-compiler
 
-> [`WEB Scaffold`](https://github.com/webscaffold/webscaffold) task for file changes watching.
+> [`WEB Scaffold`](https://github.com/webscaffold/webscaffold) task for bundling js, running Webpack with Babel.
 
 ## Install
 
 ```sh
-$ npm install --save-dev @webscaffold/task-js-watcher
+$ npm install --save-dev @webscaffold/task-js-compiler
 ```
 
 ## Usage
 
 ```js
-const watcher = require('@webscaffold/task-js-watcher');
+const jsCompiler = require('@webscaffold/task-js-compiler');
 
-await watcher(filesGlob, options, taskFn);
+await jsCompiler(webpackConfigObj);
 ```
 
 This will run Webpack based on the config passed.
 
 ## API
 
-### watcher(filesGlob, options, taskFn)
+### jsCompiler(webpackConfig, options?)
 
-Returns a Promise<object> with an istance of the watcher class.
+Returns a Promise<object> with the webpack instance and stats object.
 
-#### filesGlob
+#### webpackConfig
 
-Type: Array|string
+Type: object
 
-Glob string or aray of globs of all files to watch.
+Webpack config object.
 
 #### options
 
@@ -43,30 +43,23 @@ Options object that can be passed.
 ##### taskName
 
 Type: `string`<br>
-Default: `js-watcher`
+Default: `js-compiler`
 
 Task name that will be used by the logger to namespace the logs.
 
 ##### taskColor
 
 Type: `string`<br>
-Default: `#88d498`
+Default: `#00a8e8`
 
 The color used by the logger to log to the console the task output.
 
-##### label
+##### eventBus
 
-Type: `string`<br>
-Default: `''`
-
-The watcher label namespace used for logging purposes.
-
-#### taskFn
-
-Type: `Function`<br>
+Type: `object`<br>
 Default: undefined
 
-Task function to call on changes.
+The EventEmitter event bus that will be used to emit `bs:reload` for Browsersync.
 
 ## Licensing
 
