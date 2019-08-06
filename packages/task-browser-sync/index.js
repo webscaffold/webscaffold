@@ -12,8 +12,8 @@ const browserSyncInstance = require('browser-sync').create('browserSyncInstance'
  * @returns {Promise} Promise object
  */
 function bs(options) {
-	const taskName = options.taskName || 'clean';
-	const taskColor = options.taskColor || '#F3FFBD;'
+	const taskName = options.taskName || 'browser-sync';
+	const taskColor = options.taskColor || '#40D8F7;'
 	const logger = reporter(taskName, { color: taskColor });
 	const settings = {
 		// No need for bs JS script to be logged to the consosle - https://browsersync.io/docs/options#option-logSnippet
