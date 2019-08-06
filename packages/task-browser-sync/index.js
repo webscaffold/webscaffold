@@ -45,7 +45,8 @@ function bs(options) {
 
 /**
  * Listen to events fired by other tasks and reload the browser or show a message on screen
- * @param {EventEmitter} eventBus - EventEmitter instace
+ *
+ * @param {object} eventBus - EventEmitter instace
  */
 function listenEvents(eventBus) {
 	eventBus.on('bs:reload', () => {
