@@ -86,9 +86,10 @@ class Signale {
   }
 
   get timestamp() {
-    // return timestamp(this._config.timeStampFormat);
-    const _ = new Date();
-    return [_.getHours(), _.getMinutes(), _.getSeconds()].join(':');
+    return timestamp(this._config.timeStampFormat);
+    // This is the original Signale code, but it doesn't prefix a 0 if the minute is < 10
+    // const _ = new Date();
+    // return [_.getHours(), _.getMinutes(), _.getSeconds()].join(':');
   }
 
   get filename() {
@@ -116,11 +117,12 @@ class Signale {
 
   get _logLevels() {
     return {
-      info: 0,
+      debug: 0,
       timer: 1,
-      debug: 2,
-      warn: 3,
-      error: 4
+      info: 2,
+      default: 3,
+      warn: 4,
+      error: 5
     };
   }
 

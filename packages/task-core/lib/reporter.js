@@ -1,25 +1,32 @@
+'use strict';
+
 const Emittery = require('emittery');
 const chalk = require('chalk')
-const signale = require('./signale');
+const { Signale } = require('./signale');
 const pe = require('./youch');
-
-signale.config({
-	displayLabel: false,
-	displayTimestamp: true,
-	logLevel: 3
-});
 
 /**
  * Reporter function used to console log the task details
- * @param {String} taskName - Task name
- * @param {Object} options - Options object
- * @param {String} options.color - Task color code
- * @param {String} options.subTaskName - Subtask name
- * @returns {Object} Emitter function
+ *
+ * @param {string} taskName - Task name
+ * @param {object} options - Options object
+ * @param {string} options.color - Task color code
+ * @param {string} options.subTaskName - Subtask name
+ * @returns {object} Emitter function
  */
 module.exports = function (taskName, options = {}) {
 	const emitter = new Emittery();
+
+	const signale = new Signale({
+		logLevel: process.env.WEBSCAFFOLD_LOG_LEVEL ? process.env.WEBSCAFFOLD_LOG_LEVEL : 'default'
+	});
+	signale.config({
+		displayLabel: false,
+		displayTimestamp: true
+	});
+
 	const logger = options.subTaskName ? signale.scope(taskName, options.subTaskName) : signale.scope(taskName);
+
 	logger.setScopeColor(options.color);
 
 	const errorMsgPrepend = '¯\\_(ツ)_/¯ there was an error';

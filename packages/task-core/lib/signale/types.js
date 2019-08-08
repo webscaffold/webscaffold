@@ -36,13 +36,13 @@ module.exports = {
     badge: figures.tick,
     color: 'green',
     label: 'success',
-    logLevel: 'info'
+    logLevel: 'default'
   },
   done: {
     badge: figures.tick,
     color: 'green',
     label: 'done',
-    logLevel: 'info'
+    logLevel: 'default'
   },
   wait: {
     badge: figures.ellipsis,
@@ -60,7 +60,7 @@ module.exports = {
     badge: figures.checkboxOn,
     color: 'cyan',
     label: 'complete',
-    logLevel: 'info'
+    logLevel: 'default'
   },
   pending: {
     badge: figures.checkboxOff,
@@ -78,7 +78,7 @@ module.exports = {
     badge: figures('●'),
     color: 'green',
     label: 'start',
-    logLevel: 'info'
+    logLevel: 'default'
   },
   pause: {
     badge: figures.squareSmallFilled,
@@ -102,12 +102,12 @@ module.exports = {
     badge: figures.ellipsis,
     color: 'yellow',
     label: 'watching',
-    logLevel: 'info'
+    logLevel: 'default'
   },
   log: {
     badge: '',
     color: '',
     label: '',
-    logLevel: 'info'
+    logLevel: 'default'
   }
 };

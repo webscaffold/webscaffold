@@ -37,10 +37,7 @@ async function sassCompiler(options) {
 		}
 
 		logger.emit('info', 'styles entry point ' + result.stats.entry.split(process.cwd())[1]);
-		logger.emit('debug', {
-			message: 'included files',
-			data: result.stats.includedFiles
-		});
+		logger.emit('debug', 'included files\n' + JSON.stringify(result.stats.includedFiles, null, 2).replace(new RegExp(process.cwd(), 'g'), ''));
 		logger.emit('done', `styles compiled ${chalk.gray(humanizeMs(result.stats.duration))}`);
 
 		return result.css;

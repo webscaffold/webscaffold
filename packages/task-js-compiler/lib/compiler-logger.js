@@ -26,13 +26,13 @@ function compilerLogger(error, stats, logger) {
 		compilerError.errors = jsonStats.errors;
 		compilerError.warnings = jsonStats.warnings;
 
-		logger.emit('log', chalk.red(compilerError));
-		logger.emit('log', chalk.red('Failed to build webpack'));
+		logger.emit('error', chalk.red(compilerError));
+		logger.emit('error', chalk.red('Failed to build webpack'));
 	} else {
 		const compileTime = prettifyTime(stats.endTime - stats.startTime);
 
-		logger.emit('note', `compilation finished\n${stats.toString({ colors: true })}`);
-		logger.emit('note', `compiled with ${chalk.cyan('webpack')} in ${chalk.magenta(compileTime)}`);
+		logger.emit('log', `compilation finished\n${stats.toString({ colors: true })}`);
+		logger.emit('log', `compiled with ${chalk.cyan('webpack')} in ${chalk.magenta(compileTime)}`);
 	}
 
 	return stats;
