@@ -21,25 +21,27 @@ function copyStatic(src, dest, options = {}) {
 
 	let completedFiles = 1;
 
-	logger.emit('start', `copy ${taskName} assets`);
+	logger.emit('start', `copy assets`);
 
 	// Parameters, options checks.
 	if (src === undefined || dest === undefined) {
-		const paramErr = '`src` and `dest` are mandatory!';
+		const paramError = '`src` and `dest` are mandatory!';
 
-		logger.emit('error', paramErr);
+		logger.emit('error', paramError);
 
-		throw new TaskError(paramErr);
+		throw new TaskError(paramError);
 	}
 
 	return cpy(src, dest, options.cpy || {}).on('progress', (report) => {
-		logger.emit('debug', `${report.completedFiles} / ${report.totalFiles} copied`);
+		if (report.completedFiles !== 0) {
+			logger.emit('debug', `${report.completedFiles} / ${report.totalFiles} copied`);
 
-		completedFiles = report.completedFiles;
+			completedFiles = report.completedFiles;
+		}
 	})
 		.then(() => {
 			logger.emit('info', `${completedFiles} static assets copied`);
-			logger.emit('done', `${taskName} files copied`);
+			logger.emit('done', `files copied`);
 
 			return null;
 		});
