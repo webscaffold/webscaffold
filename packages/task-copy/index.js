@@ -32,6 +32,7 @@ function copyStatic(src, dest, options = {}) {
 		throw new TaskError(paramError);
 	}
 
+	// TODO: Explore using https://www.npmjs.com/package/cpx instead.
 	return cpy(src, dest, options.cpy || {}).on('progress', (report) => {
 		if (report.completedFiles !== 0) {
 			logger.emit('debug', `${report.completedFiles} / ${report.totalFiles} copied`);
