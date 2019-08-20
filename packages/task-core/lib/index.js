@@ -1,3 +1,5 @@
+'use strict';
+
 const fs = require('./fs');
 const reporter = require('./reporter');
 const TaskError = require('./task-error').TaskError;

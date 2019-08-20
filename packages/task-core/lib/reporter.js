@@ -36,7 +36,7 @@ module.exports = function (taskName, options = {}) {
 	});
 
 	emitter.on('done', (message = '') => {
-		logger.done(chalk.green(message));
+		logger.done(message);
 	});
 
 	emitter.on('watch', (message = '') => {

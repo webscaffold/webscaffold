@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Task error used by all plugins / tasks that want to report an error
  *
@@ -7,9 +9,10 @@
 class TaskError extends Error {
 	/**
 	 * Creates an instance of TaskError extending the native Error.
-	 * @param {String} message Error message
-	 * @param {String} type Error type
-	 * @param {Object} implementationContext Implementation context
+	 *
+	 * @param {string} message Error message
+	 * @param {string} type Error type
+	 * @param {object} implementationContext Implementation context
 	 */
 	constructor(message, type, implementationContext) {
 		// Calling parent constructor of base Error class.
