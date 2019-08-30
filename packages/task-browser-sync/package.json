@@ -25,8 +25,8 @@
   },
   "devDependencies": {
     "@webscaffold/task-core": "^0.1.0-alpha.8",
-    "ava": "^2.1.0",
-    "nyc": "^14.1.1"
+    "ava": "2.3.0",
+    "nyc": "14.1.1"
   },
   "publishConfig": {
     "access": "public"
