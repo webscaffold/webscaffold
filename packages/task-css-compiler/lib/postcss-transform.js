@@ -13,7 +13,7 @@ const { reporter } = require('@webscaffold/task-core');
  * @returns {Promise} Promise object
  */
 function postCSSTransform(cssInput, options) {
-	const logger = reporter('css-compiler', { subTaskName: 'postcss', color: options.taskColor });
+	const logger = reporter(options.taskName, { subTaskName: 'postcss', color: options.taskColor });
 	const plugins = [
 		postcssPresetEnv({
 			autoprefixer: { flexbox: 'no-2009' },

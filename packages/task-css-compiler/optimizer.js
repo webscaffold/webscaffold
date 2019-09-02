@@ -14,7 +14,7 @@ const { reporter } = require('@webscaffold/task-core');
  * @returns {Promise} The return promise with the minified code and the log msg
  */
 async function optimizer(source, options = {}) {
-	const taskName = options.label || 'css-compiler';
+	const taskName = options.taskName || 'css-compiler';
 	const taskColor = options.taskColor || '#FFD166;'
 	const logger = reporter(taskName, { subTaskName: 'minify-css', color: taskColor });
 

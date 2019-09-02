@@ -78,6 +78,7 @@ async function compiler(entryPoint, dest, options = {}) {
 	// PostCSS transform SASS output
 	const postCSSOutput = await postCSSTransform(cssOutput, {
 		reporter: logger,
+		taskName,
 		taskColor,
 		postcss: {
 			map: {
@@ -89,7 +90,7 @@ async function compiler(entryPoint, dest, options = {}) {
 
 	// Minify content if build is run with release flag
 	if (!options.isDebug) {
-		cssOutput = await cssOptimizer(cssOutput);
+		cssOutput = await cssOptimizer(cssOutput, { taskName });
 	}
 
 	// Create output folder and write results to output files
