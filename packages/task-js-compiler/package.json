@@ -1,6 +1,6 @@
 {
   "name": "@webscaffold/task-js-compiler",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "author": "Radu Micu",
   "description": "@webscaffold js compiler task (Webpack, Babel)",
   "license": "MIT",
@@ -26,7 +26,7 @@
     "@webscaffold/task-core": "^0.1.0-alpha.6"
   },
   "devDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.8",
+    "@webscaffold/task-core": "^0.1.0-alpha.9",
     "ava": "^2.1.0",
     "nyc": "^14.1.1",
     "rimraf": "^2.6.3"
