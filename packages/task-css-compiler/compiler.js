@@ -21,6 +21,7 @@ function writeFileToDisk(cssOutput, dest, options) {
 	const manifestContent = `{
 	"${options.entryPoint}": "/styles/${entryPointFileName}.build.${outputHash}.css"
 }`;
+	const manifestFileName = options.manifestFileName ? options.manifestFileName : 'asset-manifest-style.json';
 
 	if (options.buildPath === undefined) {
 		throw new TaskError('options.buildPath path is missing!');
@@ -29,7 +30,7 @@ function writeFileToDisk(cssOutput, dest, options) {
 	options.logger.emit('info', `writing ${options.isDebug ? 'dev' : 'production'} files to disk`)
 
 	return Promise.all([
-		fs.writeFile(path.resolve(options.buildPath + `/asset-manifest-style.json`), manifestContent),
+		fs.writeFile(path.resolve(options.buildPath + `/${manifestFileName}`), manifestContent),
 		fs.writeFile(path.resolve(dest + `/${entryPointFileName}.build.${outputHash}.css`), cssOutput)
 	]);
 }
@@ -97,6 +98,7 @@ async function compiler(entryPoint, dest, options = {}) {
 		entryPoint,
 		isDebug: options.isDebug,
 		buildPath: options.buildPath,
+		manifestFileName: options.manifestFileName,
 		logger
 	});
 
