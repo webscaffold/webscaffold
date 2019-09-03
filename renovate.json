@@ -1,9 +1,7 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    ":preserveSemverRanges"
   ],
-  "rangeStrategy": "auto",
-  "preserveSemverRanges": {
-	"rangeStrategy": "replace"
-  }
+  "rangeStrategy": "auto"
 }
