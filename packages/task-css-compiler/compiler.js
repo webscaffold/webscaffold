@@ -71,7 +71,7 @@ async function compiler(entryPoint, dest, options = {}) {
 		isDebug: options.isDebug,
 		eventBus: options.eventBus,
 		sass: {
-			sourceMapEmbed: options.sass.sourceMapEmbed
+			...options.sass
 		}
 	});
 
