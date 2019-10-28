@@ -21,7 +21,7 @@
     "browser-sync": "^2.26.7"
   },
   "peerDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.6"
+    "@webscaffold/task-core": "^0.1.0-alpha.9"
   },
   "devDependencies": {
     "@webscaffold/task-core": "^0.1.0-alpha.9",

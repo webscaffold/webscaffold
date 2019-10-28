@@ -21,13 +21,13 @@
     "cpy": "^7.3.0"
   },
   "peerDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.6"
+    "@webscaffold/task-core": "^0.1.0-alpha.9"
   },
   "devDependencies": {
     "@webscaffold/task-core": "^0.1.0-alpha.9",
     "ava": "^2.1.0",
     "nyc": "^14.1.1",
-    "rimraf": "^2.6.3",
+    "rimraf": "^3.0.0",
     "tempy": "^0.3.0"
   },
   "publishConfig": {

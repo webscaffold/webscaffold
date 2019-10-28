@@ -18,15 +18,15 @@
     "test:coverage": "nyc ava"
   },
   "dependencies": {
-    "chokidar": "^3.0.2"
+    "chokidar": "^3.2.3"
   },
   "peerDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.6"
+    "@webscaffold/task-core": "^0.1.0-alpha.9"
   },
   "devDependencies": {
     "@webscaffold/task-core": "^0.1.0-alpha.9",
     "ava": "^2.1.0",
-    "lolex": "^4.1.0",
+    "lolex": "^5.1.1",
     "nyc": "^14.1.1",
     "proxyquire": "^2.1.0",
     "sinon": "^7.3.2"
