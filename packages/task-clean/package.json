@@ -24,7 +24,7 @@
     "@webscaffold/task-core": "^0.1.0-alpha.10",
     "ava": "^2.1.0",
     "make-dir": "^3.0.0",
-    "nyc": "^14.1.1"
+    "nyc": "^15.0.0"
   },
   "publishConfig": {
     "access": "public"
