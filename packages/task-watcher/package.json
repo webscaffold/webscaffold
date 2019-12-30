@@ -18,7 +18,7 @@
     "test:coverage": "nyc ava"
   },
   "dependencies": {
-    "chokidar": "^3.2.3"
+    "chokidar": "^3.3.1"
   },
   "peerDependencies": {
     "@webscaffold/task-core": "^0.1.0-alpha.9"
