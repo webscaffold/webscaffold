@@ -1,6 +1,6 @@
 {
   "name": "@webscaffold/task-watcher",
-  "version": "0.1.0-alpha.4",
+  "version": "0.1.0-alpha.5",
   "author": "Radu Micu",
   "description": "@webscaffold file watcher task",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "@webscaffold/task-core": "^0.1.0-alpha.9"
   },
   "devDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.10",
+    "@webscaffold/task-core": "^0.1.0-alpha.11",
     "ava": "^2.1.0",
     "lolex": "^5.1.1",
     "nyc": "^15.0.0",

@@ -1,6 +1,6 @@
 {
   "name": "@webscaffold/task-css-compiler",
-  "version": "0.1.0-alpha.8",
+  "version": "0.1.0-alpha.9",
   "author": "Radu Micu",
   "description": "@webscaffold css compiler task (Sass, Postcss)",
   "license": "MIT",
@@ -37,7 +37,7 @@
     "@webscaffold/task-core": "^0.1.0-alpha.9"
   },
   "devDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.10",
+    "@webscaffold/task-core": "^0.1.0-alpha.11",
     "ava": "^2.4.0",
     "nyc": "^15.0.0",
     "rimraf": "^3.0.0",
