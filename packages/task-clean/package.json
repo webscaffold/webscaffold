@@ -1,6 +1,6 @@
 {
   "name": "@webscaffold/task-clean",
-  "version": "0.1.0-alpha.11",
+  "version": "0.1.0-alpha.12",
   "author": "Radu Micu",
   "description": "@webscaffold clean task",
   "license": "MIT",
@@ -21,7 +21,7 @@
     "@webscaffold/task-core": "^0.1.0-alpha.9"
   },
   "devDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.11",
+    "@webscaffold/task-core": "^0.1.0-alpha.12",
     "ava": "^3.0.0",
     "make-dir": "^3.0.0",
     "nyc": "^15.0.0"

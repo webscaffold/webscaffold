@@ -1,6 +1,6 @@
 {
   "name": "@webscaffold/task-browser-sync",
-  "version": "0.1.0-alpha.5",
+  "version": "0.1.0-alpha.6",
   "author": "Radu Micu",
   "description": "@webscaffold browser sync task",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "@webscaffold/task-core": "^0.1.0-alpha.9"
   },
   "devDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.11",
+    "@webscaffold/task-core": "^0.1.0-alpha.12",
     "ava": "^3.0.0",
     "nyc": "^15.0.0"
   },
