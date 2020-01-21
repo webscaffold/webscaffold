@@ -1,12 +1,12 @@
 {
   "private": true,
   "name": "webscaffold",
-  "version": "0.0.0",
-  "description": "Scaffold out a front-end web app using Webpack, Express.js, and others",
+  "version": "0.1.0",
+  "description": "Scaffold out a front-end web app / site using various tools.",
   "license": "MIT @ Radu Micu",
   "author": "Radu Micu",
   "engines": {
-    "node": ">=10",
+    "node": ">=12",
     "npm": ">=6"
   },
   "keywords": [
@@ -19,9 +19,9 @@
     "test:all": "./node_modules/.bin/lerna test"
   },
   "devDependencies": {
-    "@radum/eslint-config": "^1.0.0",
+    "@radum/eslint-config": "^2.1.0",
     "eslint": "^6.6.0",
-    "lerna": "^3.16.4",
+    "lerna": "^3.20.2",
     "lerna-changelog": "^1.0.0"
   },
   "repository": {
