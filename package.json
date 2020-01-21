@@ -19,10 +19,10 @@
     "test:all": "./node_modules/.bin/lerna test"
   },
   "devDependencies": {
-    "@radum/eslint-config": "^2.1.0",
-    "eslint": "^6.6.0",
-    "lerna": "^3.20.2",
-    "lerna-changelog": "^1.0.0"
+    "@radum/eslint-config": "2.1.0",
+    "eslint": "6.8.0",
+    "lerna": "3.20.2",
+    "lerna-changelog": "1.0.0"
   },
   "repository": {
     "type": "git",
