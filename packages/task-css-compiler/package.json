@@ -23,7 +23,7 @@
   "dependencies": {
     "chalk": "^3.0.0",
     "clean-css": "^4.2.1",
-    "fibers": "^4.0.1",
+    "fibers": "^5.0.0",
     "indent-string": "^4.0.0",
     "ms": "^2.1.2",
     "postcss": "^7.0.26",
