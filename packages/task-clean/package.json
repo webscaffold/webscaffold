@@ -18,13 +18,13 @@
     "test:coverage": "nyc ava"
   },
   "peerDependencies": {
-    "@webscaffold/task-core": "^0.1.0-alpha.9"
+    "@webscaffold/task-core": "^0.1.0-alpha.12"
   },
   "devDependencies": {
     "@webscaffold/task-core": "^0.1.0-alpha.12",
-    "ava": "^3.0.0",
-    "make-dir": "^3.0.0",
-    "nyc": "^15.0.0"
+    "ava": "^3.8.2",
+    "make-dir": "^3.1.0",
+    "nyc": "^15.1.0"
   },
   "publishConfig": {
     "access": "public"
