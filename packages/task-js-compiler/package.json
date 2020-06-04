@@ -19,7 +19,7 @@
     "test:coverage": "nyc ava"
   },
   "dependencies": {
-    "chalk": "^3.0.0",
+    "chalk": "^4.0.0",
     "webpack": "^4.41.5"
   },
   "peerDependencies": {
