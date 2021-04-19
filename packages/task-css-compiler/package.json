@@ -24,7 +24,7 @@
     "chalk": "^4.0.0",
     "clean-css": "^4.2.3",
     "fibers": "^5.0.0",
-    "indent-string": "^4.0.0",
+    "indent-string": "^5.0.0",
     "ms": "^2.1.2",
     "postcss": "^7.0.32",
     "postcss-preset-env": "^6.7.0",
