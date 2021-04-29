@@ -1,0 +1,42 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: webpack
+    versions:
+    - 5.17.0
+    - 5.19.0
+    - 5.21.2
+    - 5.23.0
+    - 5.24.2
+    - 5.24.3
+    - 5.25.1
+    - 5.27.1
+    - 5.28.0
+    - 5.30.0
+    - 5.31.2
+    - 5.33.2
+  - dependency-name: postcss
+    versions:
+    - 8.2.10
+    - 8.2.4
+    - 8.2.5
+    - 8.2.6
+    - 8.2.7
+    - 8.2.8
+    - 8.2.9
+  - dependency-name: clean-css
+    versions:
+    - 5.0.1
+    - 5.1.0
+    - 5.1.1
+  - dependency-name: globby
+    versions:
+    - 11.0.2
+  - dependency-name: tempy
+    versions:
+    - 1.0.0
